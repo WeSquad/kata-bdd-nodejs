@@ -1,0 +1,17 @@
+Feature: Simple Feature
+
+  Scenario: Log a string
+    When I want to log "Hello"
+    Then the response equals "Hello"
+
+  Scenario Outline: Log a string with outline
+    When I want to log "Hello world"
+    Then the response equals "Hello world"
+
+  Scenario Outline: Log a string with outline
+    When I want to log "another test"
+    Then the response equals "another test"
+
+3 scenarios (3 passed)
+6 steps (6 passed)
+0m00.004s
