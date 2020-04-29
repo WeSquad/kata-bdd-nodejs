@@ -1,5 +1,7 @@
 # KATA BDD with nodejs template
 
+[![Build Status](https://travis-ci.org/WeSquad/kata-bdd-nodejs.svg?branch=master)](https://travis-ci.org/WeSquad/kata-bdd-nodejs)
+
 --- 
 
 This project is a template for learning BDD with the following stack
