@@ -1,5 +1,12 @@
 const processScore = (agg, score) => {
-  return 0
+  let [firstAttempt, secondAttempt] = Array.from(score)
+  if (firstAttempt === '-') {
+    firstAttempt = 0
+  }
+  if (secondAttempt === '-') {
+    secondAttempt = 0
+  }
+  return agg + parseInt(firstAttempt, 10) + parseInt(secondAttempt, 10)
 }
 
 export const spareGame = (score: string) => {
