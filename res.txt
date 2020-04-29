@@ -11,32 +11,10 @@ Feature: Playing spare game
     Then the result should be 69
 
   Scenario Outline: Player did a score with som spares
-    Given player made the following score 'X,22,23,24,26,26,27,28,28,17'
+    Given player made the following score '5/,22,23,24,26,26,27,25,24,17'
     When we calculate his final score
-    Then the result should be 104
-    ✖ failed
-      AssertionError
-          + expected - actual
-      
-          -NaN
-          +104
-      
-          at World.<anonymous> (/Users/zineb/workspaces/bdd-gherkin-ts/features/steps/spare.ts:14:30)
+    Then the result should be 73
 
-Failures:
-
-1) Scenario: Player did a score with som spares # features/SpareGame.feature:37
-   ✔ Given player made the following score 'X,22,23,24,26,26,27,28,28,17' # features/steps/spare.ts:5
-   ✔ When we calculate his final score # features/steps/spare.ts:9
-   ✖ Then the result should be 104 # features/steps/spare.ts:13
-       AssertionError
-           + expected - actual
-
-           -NaN
-           +104
-
-           at World.<anonymous> (/Users/zineb/workspaces/bdd-gherkin-ts/features/steps/spare.ts:14:30)
-
-3 scenarios (1 failed, 2 passed)
-9 steps (1 failed, 8 passed)
-0m00.020s
+3 scenarios (3 passed)
+9 steps (9 passed)
+0m00.013s
