@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test:bdd": "cucumber-js -p profile",
+    "test:bdd": "cucumber-js --tags \"not @wip\" -p profile",
     "test:tdd": "jest --watchAll"
   },
   "devDependencies": {

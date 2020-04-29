@@ -18,19 +18,7 @@ Feature: Playing spare game
     Given player made the following score '--,--,--,--,--,--,--,--,--,--'
     When we calculate his final score
     Then the result should be 0
-    ✖ failed
-      AssertionError: expected undefined to equal 0
-          at World.<anonymous> (/Users/zineb/workspaces/bdd-gherkin-ts/features/steps/spare.ts:14:30)
 
-Failures:
-
-1) Scenario: Player missed all shots # features/SpareGame.feature:10
-   ✔ Given player made the following score '--,--,--,--,--,--,--,--,--,--' # features/steps/spare.ts:5
-   ✔ When we calculate his final score # features/steps/spare.ts:9
-   ✖ Then the result should be 0 # features/steps/spare.ts:13
-       AssertionError: expected undefined to equal 0
-           at World.<anonymous> (/Users/zineb/workspaces/bdd-gherkin-ts/features/steps/spare.ts:14:30)
-
-4 scenarios (1 failed, 3 passed)
-9 steps (1 failed, 8 passed)
-0m00.043s
+4 scenarios (4 passed)
+9 steps (9 passed)
+0m00.070s
