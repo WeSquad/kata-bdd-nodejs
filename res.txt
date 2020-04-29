@@ -12,6 +12,25 @@ Feature: Simple Feature
     When I want to log "another test"
     Then the response equals "another test"
 
-3 scenarios (3 passed)
-6 steps (6 passed)
-0m00.004s
+Feature: Playing spare game
+
+  Scenario Outline: Player missed all shots
+    Given player made the following score '--,--,--,--,--,--,--,--,--,--'
+    When we calculate his final score
+    Then the result should be 0
+    ✖ failed
+      AssertionError: expected undefined to equal 0
+          at World.<anonymous> (/Users/zineb/workspaces/bdd-gherkin-ts/features/steps/spare.ts:14:30)
+
+Failures:
+
+1) Scenario: Player missed all shots # features/SpareGame.feature:10
+   ✔ Given player made the following score '--,--,--,--,--,--,--,--,--,--' # features/steps/spare.ts:5
+   ✔ When we calculate his final score # features/steps/spare.ts:9
+   ✖ Then the result should be 0 # features/steps/spare.ts:13
+       AssertionError: expected undefined to equal 0
+           at World.<anonymous> (/Users/zineb/workspaces/bdd-gherkin-ts/features/steps/spare.ts:14:30)
+
+4 scenarios (1 failed, 3 passed)
+9 steps (1 failed, 8 passed)
+0m00.043s
