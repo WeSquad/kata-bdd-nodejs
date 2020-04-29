@@ -1,5 +1,4 @@
 Feature: Playing spare game
-
   Scenario Outline: Player missed all shots
     Given player made the following score '<score>'
     When we calculate his final score
@@ -9,11 +8,10 @@ Feature: Playing spare game
       | score                         | result |
       | --,--,--,--,--,--,--,--,--,-- | 0      |
 
-  @wip
   Scenario Outline: Player did a simple score
     Given player made the following score '<score>'
     When we calculate his final score
-    Then the result should be '<result>'
+    Then the result should be <result>
 
     Examples:
       | score                         | result |
@@ -22,7 +20,7 @@ Feature: Playing spare game
   Scenario Outline: Player did a score with som spares
     Given player made the following score '<score>'
     When we calculate his final score
-    Then the result should be '<result>'
+    Then the result should be <result>
 
     Examples:
       | score                         | result |
@@ -32,7 +30,7 @@ Feature: Playing spare game
   Scenario Outline: Player did a score with som spares
     Given player made the following score '<score>'
     When we calculate his final score
-    Then the result should be '<result>'
+    Then the result should be <result>
 
     Examples:
       | score                        | result |

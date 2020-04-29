@@ -18,4 +18,13 @@ describe('Playing ', () => {
 
     expect(result).toEqual(output)
   })
+
+  it('should return 69 if player did a simple score with a spare', () => {
+    const input = '5/,22,23,24,26,26,27,25,24,17'
+    const output = 75
+
+    const result = spareGame(input)
+
+    expect(result).toEqual(output)
+  })
 })
