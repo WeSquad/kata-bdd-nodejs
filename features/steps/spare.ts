@@ -1,6 +1,6 @@
 import { Given, When, Then } from 'cucumber'
 import { expect } from 'chai'
-import { spareGame } from '../../src/sparegame'
+import { spareGame } from '../../src/spareGame'
 
 Given('player made the following score {string}', function (scorep: string) {
   this.score = scorep
