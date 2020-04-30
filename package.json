@@ -6,7 +6,7 @@
   "scripts": {
     "test:bdd": "cucumber-js -p profile",
     "test:tdd": "jest",
-    "test": "yarn install && yarn test:tdd && yarn test:bdd"
+    "test": "yarn test:tdd && yarn test:bdd"
   },
   "devDependencies": {
     "@types/chai": "^4.2.11",

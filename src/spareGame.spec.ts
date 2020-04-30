@@ -1,4 +1,4 @@
-import { spareGame } from './sparegame'
+import { spareGame } from './spareGame'
 
 describe('Playing ', () => {
   it('should return 0 if player missed all turns', () => {
