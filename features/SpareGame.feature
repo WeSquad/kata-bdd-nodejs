@@ -34,4 +34,4 @@ Feature: Playing spare game
 
     Examples:
       | score                        | result |
-      | X,22,23,24,26,26,27,28,28,17 | 104    |
+      | X,22,23,24,26,26,27,2/,2/,17 | 85     |
